@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!-- Main Root -->
+<html lang="en">
+    <!-- Document Metadata -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ellis Chang's User Page | Ellis Chang's CSE110 Lab 2</title>
+        <link>
+    </head>
+    <!-- Content -->
+    <body>
+        <header>
+            <h1>Ellis Chang's CSE110 Lab 1</h1>
+            <p>Ellis Chang's github page for Lab 1</p>
+        </header>
+        <section>
+            <main>
+                <hr>
+                <h1>Ellis Chang's User Page</h1>
+                <p>My favorite programming language is Python</p>
+                <h1>Markdown Constructs</h1>
+                <hr>
+                <h3>Headings</h3>
+                <h1>Header 1</h1>
+                <h2>Header 2</h2>
+                <h3>Header 3</h3>
+                <h4>Header 4</h4>
+                <h5>Header 5</h5>
+                <h6>Header 6</h6>
+                <h3>Styling</h3>
+                <hr>
+                <p>
+                    <strong>This is bold text</strong>
+                </p>
+                <p>
+                    <b>This is another way to get bold text</b>
+                </p>
+                <p>
+                    <em>This is italicized text</em>
+                </p>
+                <p>
+                    <i>This is another way to get italicized text</i>
+                </p>
+                <p>
+                    <del>This is strikethrough text</del>
+                </p>
+                <p>
+                    <strong>This is bold and <em>italicized</em> text</strong>
+                </p>
+                <p>
+                    <strong><em>This is all bold and italicized text</em></strong>
+                </p>
+                <p>This is how to get the font to be the color <span style="color: red;font-weight: bold;">red</span></p>
+                <h3>Quoting</h3>
+                <hr>
+                <p>This is an example</p>
+                <blockquote>
+                    <p>of quoting a text in html using blockquote</p>
+                </blockquote>
+                <p>And this is an example of</p>
+                <code><pre>quoting code
+in
+html using code and pre element
+                </pre>
+                </code>
+                <p>as well as <code>quoting code inline</code></p>
+                <h3>Screenshots:</h3>
+                <hr>
+                <p>Resize the browser to see more images.</p>
+                <picture>
+                    <source media="(min-width:1440px)" srcset="images/Capture1.png">
+                    <img src="images/Capture2.png" alt="screenshot2">
+                </picture>
+                <aside>
+                    <h4>Aside tag:</h4>
+                    <p>These were the images and style from the githhub pages from Lab 1 in html form</p>
+                </aside>
+                <h3>Links:</h3>
+                <hr>
+                <p>This is the <a href="index.html">link</a> to this page</p>
+                <p>This is a iframe of the github page from Lab 1</p>
+                <iframe src="https://elliscchang.github.io/elliscchang.github.io-cse110-lab1/" frameborder="0" height="500" width="600" title="Lab 1"></iframe>
+                <h3>Lists & Tasks</h3>
+                <hr>
+                <ul>
+                    <li>bulleted list</li>
+                    <li>using ul and li element</li>
+                </ul>
+                <ol>
+                    <li>ordered list</li>
+                    <li>using ol and li element</li>
+                </ol>
+                <h3>Images and Multimedia</h3>
+                <hr>
+                <div class="figure">
+                    <figure>
+                        <img src="images/dog.PNG" alt="dog" width="500" height="auto">
+                        <figcaption>Fig.1 - White fluffy dog in a field of grass.</figcaption>
+                    </figure>
+                </div>
+                <p>This is a sound of a dog barking.</p>
+                <audio src="audio/dogbarking.mp3" controls>Your browser does not support the audio element.</audio>
+                <p>This is a video of a happy dog.</p>
+                <video autoplay muted loop>
+                    <source src="video/happydog.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Drawing shapes:</h3>
+                <hr>
+                <p>This is a canvas with a diagonal line:</p>
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #ff0000;">
+                    Your browser does not support the HTML canvas tag.
+                </canvas>
+                <script>
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+                    ctx.moveTo(0,0);
+                    ctx.lineTo(200,100);
+                    ctx.stroke();
+                </script>
+                <p>This is an example of the svg tag drawing a round rectangle.</p>
+                <svg width="400" height="180">
+                    <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+                    style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+                </svg>
+                <h3>Forms</h3>
+                <hr>
+                <form action="/action_page.php">
+                    <fieldset>
+                        <legend>About Yourself</legend>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <label for="gender">Choose your gender:</label><br>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">Other</label><br><br>
+                        <label for="birthday">Birthday:</label><br>
+                        <input type="date" id="birthday" name="birthday"><br><br>
+                        <label for="email">Enter your email:</label><br>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="quantity">Favorite Number (between 1 and 10):</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br>
+                        <label for="vol">On a Scale between 1 and 10, how happy are you?</label><br>
+                        <input type="range" id="vol" name="vol" min="1" max="10"><br><br>
+                        <label for="foods">Choose your favorite food:</label>
+                        <select name="foods" id="foods">
+                            <optgroup label="Asian Foods">
+                            <option value="Ramen">Ramen</option>
+                            <option value="Fried Rice">Fried Rice</option>
+                            </optgroup>
+                            <optgroup label="American Foods">
+                            <option value="Hot Dog">Hot Dog</option>
+                            <option value="Burger">Burger</option>
+                            </optgroup>
+                        </select><br><br>
+                        <label for="movie">Choose your favorite genre of movies from the list:</label>
+                        <input list="movies" name="movie" id="movie">
+                        <datalist id="movies">
+                            <option value="Scify">
+                            <option value="Romance">
+                            <option value="Thriller">
+                            <option value="Drama">
+                            <option value="Comedy">
+                        </datalist><br><br>
+                        <label for="career">What you want to do after graduating:</label><br>
+                        <textarea id="career" name="career" rows="4" cols="50">I want to find an internship and find a job 
+at either a startup or a big tech company.</textarea>
+                        <br><br>
+                        <label for="vehicle">What type of vehicle do you have:</label><br>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> I have a bike</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> I have a car</label><br>
+                        <label for="favcolor">Select your favorite color:</label><br>
+                        <input type="color" id="favcolor" name="favcolor"><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="reset">
+                    </fieldset>
+                </form>
+                <h3>Table:</h3>
+                <hr>
+                <table>
+                    <caption>2021 Monthly Savings</caption>
+                    <colgroup>
+                        <col span="2" style="background-color:lightgrey">
+                    </colgroup>
+                    <tr>
+                        <th>Month</th>
+                        <th>Savings</th>
+                    </tr>
+                    <tr>
+                        <td>January</td>
+                        <td>$500</td>
+                    </tr>
+                </table>
+                <h3>Details & Summary</h3>
+                <hr>
+                <details>
+                    <summary>UC San Diego quoted from Wikipedia</summary>
+                    <p>The University of California, San Diego (UC San Diego or UCSD) is a public 
+                        university in San Diego, California. Established in 1960 near the pre-existing Scripps
+                        Institution of Oceanography, UC San Diego is the southernmost of the ten campuses of the University
+                        of California, and offers over 200 undergraduate and graduate degree programs, enrolling 31,842 undergraduate
+                        and 8,631 graduate students. The university occupies 2,178 acres near the coast of the Pacific Ocean,
+                        with the main campus resting on approximately 1,152 acres.</p>
+                </details><br>
+                <button type="button" onclick="alert('This button alert is after the UCSD Details/Summary!')">What do I do?</button><br>
+                <p>Click the button below to see what it does.</p>
+                <button onclick="showContent()">What am I?</button>
+                <template>
+                <h4>Guess who's back, back again!!!</h4>
+                <img src="images/dog.PNG" width="214" height="204">
+                </template>
+                <script>
+                function showContent() {
+                    var temp = document.getElementsByTagName("template")[0];
+                    var clon = temp.content.cloneNode(true);
+                    document.body.appendChild(clon);
+                }
+                </script><br><br>
+            </main>
+        </section>
+    </body>
+    <div>
+        <footer>
+        <nav>
+            <a href="https://google.com">Google</a> |
+            <a href="https://youtube.com">Youtube</a> |
+            <a href="https://facebook.com">Facebook</a>
+        </nav>
+    </footer>  
+    </div>
+
+</html>
