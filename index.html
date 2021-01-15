@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ellis Chang's User Page | Ellis Chang's CSE110 Lab 2</title>
-        <link>
+        <link rel="stylesheet" href="./Resources/css/style.css" type="text/css">
     </head>
     <!-- Content -->
     <body>
@@ -58,13 +58,13 @@
                 <blockquote>
                     <p>of quoting a text in html using blockquote</p>
                 </blockquote>
-                <p>And this is an example of</p>
-                <code><pre>quoting code
-in
-html using code and pre element
+                <p>And this is an example of:</p>
+                <pre>keeping spacing
+intact with what
+                the text editor has
+                    as well as breaking lines
                 </pre>
-                </code>
-                <p>as well as <code>quoting code inline</code></p>
+                <p>as well as an example of <code>quoting code inline</code></p>
                 <h3>Screenshots:</h3>
                 <hr>
                 <p>Resize the browser to see more images.</p>
@@ -80,7 +80,7 @@ html using code and pre element
                 <hr>
                 <p>This is the <a href="index.html">link</a> to this page</p>
                 <p>This is a iframe of the github page from Lab 1</p>
-                <iframe src="https://elliscchang.github.io/elliscchang.github.io-cse110-lab1/" frameborder="0" height="500" width="600" title="Lab 1"></iframe>
+                <iframe src="https://elliscchang.github.io/elliscchang.github.io-cse110-lab1/" height="500" width="600" title="Lab 1"></iframe>
                 <h3>Lists & Tasks</h3>
                 <hr>
                 <ul>
@@ -95,7 +95,7 @@ html using code and pre element
                 <hr>
                 <div class="figure">
                     <figure>
-                        <img src="images/dog.PNG" alt="dog" width="500" height="auto">
+                        <img src="images/dog.PNG" alt="dog" width="500">
                         <figcaption>Fig.1 - White fluffy dog in a field of grass.</figcaption>
                     </figure>
                 </div>
@@ -133,7 +133,7 @@ html using code and pre element
                         <input type="text" id="fname" name="fname" value="John"><br>
                         <label for="lname">Last name:</label><br>
                         <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                        <label for="gender">Choose your gender:</label><br>
+                        <p>Choose your gender:</p>
                         <input type="radio" name="gender" id="male" value="male">
                         <label for="male">Male</label><br>
                         <input type="radio" name="gender" id="female" value="female">
@@ -172,7 +172,7 @@ html using code and pre element
                         <textarea id="career" name="career" rows="4" cols="50">I want to find an internship and find a job 
 at either a startup or a big tech company.</textarea>
                         <br><br>
-                        <label for="vehicle">What type of vehicle do you have:</label><br>
+                        <p>What type of vehicle do you have:</p>
                         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                         <label for="vehicle1"> I have a bike</label><br>
                         <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -227,14 +227,11 @@ at either a startup or a big tech company.</textarea>
             </main>
         </section>
     </body>
-    <div>
-        <footer>
+    <footer>
         <nav>
             <a href="https://google.com">Google</a> |
             <a href="https://youtube.com">Youtube</a> |
             <a href="https://facebook.com">Facebook</a>
         </nav>
     </footer>  
-    </div>
-
 </html>
