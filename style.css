@@ -1,0 +1,162 @@
+/* Setting font size and font color for body*/
+body {
+    font-size: 20px;
+    color: #000;
+    background-color: lightgrey;
+    margin: 10px 5px 10px 5px;
+}
+
+.title {
+    background-color: rgba(0, 162, 255, 100%);
+    border-style: solid;
+    border-color: hsla(209, 100%, 50%, 100%);
+    border-radius: 20px;
+    border-width: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 15px 5px 15px 5px;
+    position: static;
+}
+
+.title #lab {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.title p {
+    text-align: center;
+    height: 30px;
+    width: auto;
+}
+
+.md_title {
+    background-color: #00a2ff;
+    border-style: solid;
+    border-color: #0084ff;
+    border-radius: 5px;
+    border-width: 5px;
+    margin: auto;
+    padding: auto;
+}
+
+.styling {
+    background-color: #00a2ff;
+    border-style: solid;
+    border-color: #0084ff;
+    border-radius: 5px;
+    border-width: 5px;
+    left: 20px;
+    position: relative;
+}
+
+.headings_title {
+    text-decoration: underline wavy rgb(255, 0, 0);
+}
+
+h3.headings_title{
+    color: hsl(240, 100%, 50%);
+}
+
+.red {
+    display: block;
+}
+
+.screenshots img{
+    min-width: 75%;
+}
+
+.detail #summary_description {
+    max-width: 50%;
+}
+
+.flex-container-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: lightskyblue;
+}
+  
+.flex-container-1 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: cyan;
+}
+  
+.flex-container-2 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-3 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: aquamarine;
+}
+  
+.flex-container-3 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.item1 { 
+    grid-area: header; 
+}
+
+.item2 {
+    grid-area: menu; 
+}
+
+.item3 { 
+    grid-area: main; 
+}
+
+.item4 { 
+    grid-area: right; 
+}
+
+.item5 { 
+    grid-area: footer; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    grid-gap: 20px;
+    background-color: #2196F3;
+    padding: 20px;
+}
+  
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 960px) {
+    .figure figure img {
+        display: none;
+    }
+}
