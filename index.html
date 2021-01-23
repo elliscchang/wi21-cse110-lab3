@@ -6,22 +6,49 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ellis Chang's User Page | Ellis Chang's CSE110 Lab 2</title>
-        <link rel="stylesheet" href="./Resources/css/style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <style>
+            * {
+                font-family: 'Noto Sans JP', sans-serif;
+            }
+
+            /* unvisited link */
+            a:link {
+            color: darkgreen;
+            }
+
+            /* visited link */
+            a:visited {
+            color: darkblue;
+            }
+
+            /* mouse over link */
+            a:hover {
+            color: limegreen;
+            }
+
+            /* selected link */
+            a:active {
+            color: blue;
+            }
+        </style>
     </head>
     <!-- Content -->
     <body>
-        <header>
-            <h1>Ellis Chang's CSE110 Lab 1</h1>
-            <p>Ellis Chang's github page for Lab 1</p>
+        <header class="title">
+            <h1 id="lab">Ellis Chang's CSE110 Lab 2</h1>
+            <p>Ellis Chang's github page for Lab 2 and 3</p>
         </header>
         <main>
             <hr>
             <section>
                 <h1>Ellis Chang's User Page</h1>
                 <p>My favorite programming language is Python</p>
-                <h1>Markdown Constructs</h1>
+                <h1 class="md_title">Markdown Constructs</h1>
                 <hr>
-                <h3>Headings</h3>
+                <h3 class="headings_title">Headings</h3>
                 <h1>Header 1</h1>
                 <h2>Header 2</h2>
                 <h3>Header 3</h3>
@@ -30,7 +57,7 @@
                 <h6>Header 6</h6> 
             </section>
             <section>
-                <h3>Styling</h3>
+                <h3 class="styling">Styling</h3>
                 <hr>
                 <p>
                     <strong>This is bold text</strong>
@@ -53,7 +80,7 @@
                 <p>
                     <strong><em>This is all bold and italicized text</em></strong>
                 </p>
-                <p>This is how to get the font to be the color <span style="color: red;font-weight: bold;">red</span></p>
+                <p>This is how to get the font to be the color <span class="red" style="color: red;font-weight: bold;">red</span></p>
             </section>
             <section>
                 <h3>Quoting</h3>
@@ -73,7 +100,7 @@
             <h3>Screenshots:</h3>
             <hr>
             <p>Resize the browser to see more images.</p>
-            <picture>
+            <picture class="screenshots">
                 <source media="(min-width:1440px)" srcset="images/Capture1.png">
                 <img src="images/Capture2.png" alt="screenshot2">
             </picture>
@@ -219,9 +246,9 @@ at either a startup or a big tech company.</textarea>
             <section>
                 <h3>Details & Summary</h3>
                 <hr>
-                <details>
+                <details class="detail">
                     <summary>UC San Diego quoted from Wikipedia</summary>
-                    <p>The University of California, San Diego (UC San Diego or UCSD) is a public 
+                    <p id="summary_description">The University of California, San Diego (UC San Diego or UCSD) is a public 
                         university in San Diego, California. Established in 1960 near the pre-existing Scripps
                         Institution of Oceanography, UC San Diego is the southernmost of the ten campuses of the University
                         of California, and offers over 200 undergraduate and graduate degree programs, enrolling 31,842 undergraduate
@@ -243,6 +270,33 @@ at either a startup or a big tech company.</textarea>
                 }
                 </script><br><br>
             </section>
+            <h3>Flexboxes</h3><hr>
+            <div class="flex-container-1">
+                <div>0</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>  
+            </div>
+            <div class="flex-container-2">
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>  
+                <div>7</div>
+            </div>
+            <div class="flex-container-3">
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+            </div>
+            <h3>Grid Layout</h3><hr>
+            <div class="grid-container">
+                <div class="item1">Header</div>
+                <div class="item2">Menu</div>
+                <div class="item3">Main</div>  
+                <div class="item4">Right</div>
+                <div class="item5">Footer</div>
+            </div>
         </main>   
         <footer>
             <nav>
